@@ -562,6 +562,8 @@ type Configuration struct {
 	SyslogHost string `json:"syslog-host"`
 	// SyslogPort port
 	SyslogPort int `json:"syslog-port"`
+	// SyslogTag changes the tag of messages, default is nginx
+	SyslogTag string `json:"syslog-tag"`
 
 	// NoTLSRedirectLocations is a comma-separated list of locations
 	// that should not get redirected to TLS
